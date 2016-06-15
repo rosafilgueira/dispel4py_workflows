@@ -5,7 +5,7 @@ Simpler dispel4py workflows can be found [here](https://github.com/rosafilgueira
 The dispel4py workflows stored in this repository have been presented at several conferences:
 - [EGU-2015 Slides](https://github.com/rosafilgueira/dispel4py_training_material/blob/master/EGU2015_OpenSource_dispel4py.pdf)
 - [eScience2015 Slides](https://github.com/rosafilgueira/dispel4py_training_material/blob/master/eScience2015_dispel4py.pdf) 
-- [AGU2015 Slides] (Slides: https://github.com/rosafilgueira/dispel4py_training_material/blob/master/AGU2015_IN34A_dispel4py.pdf)
+- [AGU2015 Slides](Slides: https://github.com/rosafilgueira/dispel4py_training_material/blob/master/AGU2015_IN34A_dispel4py.pdf)
 
 More information about these workflows can be foud [here](https://www.computer.org/csdl/proceedings/e-science/2015/9325/00/9325a454-abs.html). 
 
