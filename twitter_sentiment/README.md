@@ -1,26 +1,26 @@
 #Social Computing: Twitter Sentiment Analysis codes 
 
-To collect tweets you have to execute (at the end of this file, more information is attached for collecting tweets):
+- To collect tweets you have to execute (at the end of this file, more information is attached for collecting tweets):
 	
 		python get_live_tweets.py (The tweets are stored in *tweets.json* file)
 	
  **Important**: In this repository we also have attached [some tweets](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/twitter_sentiment/tweets.json) for trying directly the workflow without needing to execute the get_live_tweets.py script.
 	
-To execute the sentiment analysis, first you need to install:
+- To execute the sentiment analysis, first you need to install:
 
 		pip install nltk numpy 
 
 (More information at [here](http://www.nltk.org/install.html))
 	 	
-The workflow source code is analysis_sentiment.py. You could modify the ROOT_DIR if you want to indicate a different folder. 
+- The workflow source code is analysis_sentiment.py. You could modify the ROOT_DIR if you want to indicate a different folder. 
 
-For executing it with the simple mapping type:
+- For executing it with the simple mapping type:
 	  	
 		dispel4py simple twitter/analysis_sentiment.py  -d '{"read" : [ {"input" : "tweets.json"} ]}'
 
 ## Tweets collection
  
-For collecting tweets you need a Twitter account and a Twitter application you would need:
+- For collecting tweets you need a Twitter account and a Twitter application you would need:
 
    ( Note: Assuming you already have a Twitter account use the following instructions to create a Twitter application)
 	
