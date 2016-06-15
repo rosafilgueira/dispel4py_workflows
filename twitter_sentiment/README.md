@@ -18,8 +18,7 @@
 
    ( Note: Assuming you already have a Twitter account use the following instructions to create a Twitter application)
 	
-    1. Create a Twitter application
-    	
+    1.Create a Twitter application
 	* Open a web browser and go to https://apps.twitter.com/app/new
     	* Sign in with your normal Twitter username and password if you are not already signed in.
     	* Enter a name, description, and temporary website (e.g. http://coming-soon.com)
@@ -30,8 +29,7 @@
     	* You should now see new fields labeled "Access token" and "Access token secret" at the bottom of the page.
     	* You now have a Twitter application that can act on behalf of your Twitter user to read data from Twitter.
 
-    2. Connect your Twitter application to these scripts
-	
+    2.Connect your Twitter application to these scripts
 	* Open get_live_tweets.py and enter your information here:
 		
 		access_token_key = xxxxxxxx
