@@ -62,7 +62,7 @@ represents the dust extinction within the galaxies and is a
 correction coefficient needed to calculate the optical luminosity
 of a galaxy. 
 
-[[AstroWorkflow.pdf]]
+![Figure Internal Extinction workflow](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/AstroWorkflow.pdf)
 
 This workflow first reads an input file (coordinates.txt
 size 19KB) that contains the right ascension (Ra) and
@@ -85,7 +85,7 @@ the benefits of dispel4py for analysing Twitter data by
 implementing a basic Sentiment Analysis workflow, called
 *sentiment*.
 
-[[TweetsWorkflow.pdf]]
+![Figure sentiment workflow](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/TweetsWorkflow.pdf)
 
 The *sentiment* workflow, first scans the tweets preprocessing the words they
 contain, and then classifies each tweet based on the total
