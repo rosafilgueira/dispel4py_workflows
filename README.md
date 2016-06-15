@@ -24,10 +24,12 @@ With dispel4py we have developed the *Seismic Ambient Noise Cross-Correlation* w
 as part of the [VERCE project](http://www.verce.eu) project, which preprocesses and cross-correlates traces from several stations in real-time. 
 The *xcorr workflow consists of two main phases:
 
+
+[[XcorrWorfklow.pdf]]
+
 - Phase 1 -- Preprocess: Each continuous time series from a given seismic station (called a *trace*), is subject to a series of treatments. 
 		The processing of each trace is independent from other traces, making this phase "embarrassingly" parallel (complexity O(n), where n is the number of stations
 - Phase 2 -- Cross-Correlation  Pairs all of the stations and calculates the cross-correlation for each pair (complexity O(n2)).
-
 
 
 Recently the [Pegasus team](https://pegasus.isi.edu/) and  the [dispel4py team](https://github.com/dispel4py/dispel4py) 
@@ -61,6 +63,8 @@ represents the dust extinction within the galaxies and is a
 correction coefficient needed to calculate the optical luminosity
 of a galaxy. 
 
+[[AstroWorkflow.pdf]]
+
 This workflow first reads an input file (coordinates.txt
 size 19KB) that contains the right ascension (Ra) and
 declination (Dec) values for 1051 galaxies. Then 
@@ -82,7 +86,9 @@ the benefits of dispel4py for analysing Twitter data by
 implementing a basic Sentiment Analysis workflow, called
 *sentiment*.
 
-the *sentiment* workflow, first scans the tweets preprocessing the words they
+[[TweetsWorkflow.pdf]]
+
+The *sentiment* workflow, first scans the tweets preprocessing the words they
 contain, and then classifies each tweet based on the total
 counts for positive and negative words. As the sentiment
 workflow applies two analyses, different preprocessing and
