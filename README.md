@@ -31,6 +31,10 @@ The *xcorr workflow consists of two main phases:
 - Phase 2 -- Cross-Correlation  Pairs all of the stations and calculates the cross-correlation for each pair (complexity O(n2)).
 
 
+All the codes for tesing this workflow can be found at [this](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/tc_cross_correlation) repository,
+which includes the instructions for running it.
+
+
 Recently the [Pegasus team](https://pegasus.isi.edu/) and  the [dispel4py team](https://github.com/dispel4py/dispel4py) 
 have  collaborated  to  enable  automated the *xcorr* workflow, across different computing resources (MPI cluster and Storm cluster)
 collecting data from [IRIS](http://ds.iris.edu/ds/nodes/dmc/earthscope/usarray/_US-TA-operational/). For this work, we have
