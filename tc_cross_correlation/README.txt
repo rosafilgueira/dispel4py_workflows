@@ -1,3 +1,5 @@
+# Seismic Noise Cross-Correlation codes
+
 1. The first workflow (realtime_prep.py) stores the results in a directory called OUTPUT/DATA. 
 2. The second one (realtime_xcorr.py or realtime_xcorr_storm.py) stores the results in OUTPUT/XCORR directory. 
 3. This is our script for executing both workflows: 
