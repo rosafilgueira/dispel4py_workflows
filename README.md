@@ -30,7 +30,7 @@ earthquake "repeater" analysis, require a large number of waveform cross-correla
 
 With dispel4py we have developed the *Seismic Ambient Noise Cross-Correlation* workflow (also called the *xcorr* workflow) 
 as part of the [VERCE project](http://www.verce.eu) project, which preprocesses and cross-correlates traces from several stations in real-time. 
-The *xcorr workflow consists of two main phases:
+The *xcorr* workflow consists of two main phases:
 
 ![Figure xcorr workflow](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/XcorrWorkflow.pdf)
 
