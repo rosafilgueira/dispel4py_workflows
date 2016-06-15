@@ -8,7 +8,9 @@ To collect tweets you have to execute (at the end of this file, more information
 	
 To execute the sentiment analysis, first you need to install:
 
-		pip install nltk numpy (More information at [here](http://www.nltk.org/install.html))
+		pip install nltk numpy 
+
+(More information at [here](http://www.nltk.org/install.html))
 	 	
 The workflow source code is analysis_sentiment.py. You could modify the ROOT_DIR if you want to indicate a different folder. 
 
