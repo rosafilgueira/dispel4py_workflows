@@ -30,7 +30,7 @@ The *xcorr workflow consists of two main phases:
 		The processing of each trace is independent from other traces, making this phase "embarrassingly" parallel (complexity O(n), where n is the number of stations
 - Phase 2 -- Cross-Correlation  Pairs all of the stations and calculates the cross-correlation for each pair (complexity O(n2)).
 
-**Important!** All the codes for tesing the *xcorr* workflow can be found at [this](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/tc_cross_correlation) repository, which includes the instructions for running it.
+**Important!** All the codes for tesing the *xcorr* workflow can be found [here](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/tc_cross_correlation) repository, which includes the instructions for running it.
 
 
 **Note**: Recently the [Pegasus team](https://pegasus.isi.edu/) and the [dispel4py team](https://github.com/dispel4py/dispel4py) 
@@ -43,7 +43,7 @@ and the coordination of the workflow execution are automatically managed by Pega
 And we have adopted Docker containers for implementing this work, 
 because they can substantially improve computational research reproducibility.
 
-More information about this work can be fout [at](https://www.iris.edu/hq/files/agendas/2016/iris_workshop/FerreiraDaSilvaRafael.pdf)
+More information about this work can be found [here](https://www.iris.edu/hq/files/agendas/2016/iris_workshop/FerreiraDaSilvaRafael.pdf)
 and [pegasus_dispel4py GitHub repository](https://github.com/dispel4py/pegasus_dispel4py).
 
 	
@@ -89,6 +89,11 @@ implementing a basic Sentiment Analysis workflow, called
 *sentiment*.
 
 ![Figure sentiment workflow](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/TweetsWorkflow.pdf)
+
+**Important!** All the codes for tesing the *sentiment* workflow can be found [here](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/twitter_sentiment)
+repository, which includes the instructions for running it.
+
+https://github.com/rosafilgueira/dispel4py_workflows/tree/master/twitter_sentiment
 
 The *sentiment* workflow, first scans the tweets preprocessing the words they
 contain, and then classifies each tweet based on the total
