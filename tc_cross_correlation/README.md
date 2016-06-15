@@ -10,28 +10,21 @@ For running the preprocess (realtime_prep.py) and cross-correlation (realtime_xc
 
 - The first workflow (realtime_prep.py) stores the results in a directory called OUTPUT/DATA. 
 - The second one (realtime_xcorr.py or realtime_xcorr_storm.py) stores the results in OUTPUT/XCORR directory. 
-- This is our script for executing both workflows: 
+- This is our script for executing both workflows with multi mapping: 
 	
-	#!/bin/bash
-	#log="log"
-	set -x
-
 
     	export DISPEL4PY_XCORR_STARTTIME=2015-04-06T06:00:00.000
     	export DISPEL4PY_XCORR_ENDTIME=2015-04-06T07:00:00.000
-
-
-
     	rm -rf ./tc_cross_correlation/OUTPUT/DATA
     	rm -rf ./tc_cross_correlation/OUTPUT/XCORR
     	mkdir  ./tc_cross_correlation/OUTPUT/DATA
     	mkdir ./tc_cross_correlation/OUTPUT/XCORR
 
     	dispel4py multi tc_cross_correlation/realtime_prep.py -f tc_cross_correlation/realtime_xcorr_input.jsn -n 4
-
     	dispel4py multi tc_cross_correlation/realtime_xcorr.py -n 4
 
-
+	
+- Note: Other mappings can be used like, [simple](https://github.com/dispel4py/pegasus_dispel4py/blob/master/simple_experiment/command-job1.sh), [mpi](https://github.com/dispel4py/docker.openmpi/blob/master/command-postprocess.sh) or [storm](https://github.com/dispel4py/pegasus_dispel4py/blob/master/storm_experiment/command-job.sh).
 
 - The last step is to open the file " tc_cross_correlation/realtime_xcorr_input.jsn”. 
    You need to change the path of the file Copy-Uniq-OpStationList-NetworkStation.txt
