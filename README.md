@@ -86,6 +86,7 @@ implementing a basic Sentiment Analysis workflow, called
 *sentiment*.
 
 ![Figure sentiment workflow](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/TweetsWorkflow.pdf)
+![Figure sentiment workflow2](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/FigSent.eps)
 
 The *sentiment* workflow, first scans the tweets preprocessing the words they
 contain, and then classifies each tweet based on the total
