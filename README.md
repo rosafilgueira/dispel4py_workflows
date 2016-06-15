@@ -135,5 +135,4 @@ sentiment of the tweet. After the classification, the same
 procedure as before is applied to each tweet, to know which
 are the three happiest states.
 
-**Important!** All the codes for tesing the *sentiment* workflow can be found [here](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/twitter_sentiment)
-repository, which includes the instructions for running it.
+**Important!** All the codes for tesing the *sentiment* workflow can be found [here](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/twitter_sentiment), which includes the instructions for running it.
