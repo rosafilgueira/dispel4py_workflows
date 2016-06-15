@@ -26,15 +26,12 @@ For running the preprocess (realtime_prep.py) and cross-correlation (realtime_xc
 	
 - Note: Other mappings can be used like, [simple](https://github.com/dispel4py/pegasus_dispel4py/blob/master/simple_experiment/command-job1.sh), [mpi](https://github.com/dispel4py/docker.openmpi/blob/master/command-postprocess.sh) or [storm](https://github.com/dispel4py/pegasus_dispel4py/blob/master/storm_experiment/command-job.sh).
 
-- The last step is to open the file " tc_cross_correlation/realtime_xcorr_input.jsn”. 
-   You need to change the path of the file Copy-Uniq-OpStationList-NetworkStation.txt
-	“xxx/tc_cross_correlation/Copy-Uniq-OpStationList-NetworkStation.txt”  
+- The last step is to open the file " tc_cross_correlation/realtime_xcorr_input.jsn” and change the path of the file Copy-Uniq-OpStationList-NetworkStation.txt
 
-	Explanation: The realtime_xcorr_input.jsn has the file’s path of the stations' name that realtime_prep.py workflow needs as input. 
-	The  Copy-Uniq-OpStationList-NetworkStation.txt file only have a few, but you also have a file called "Uniq-OpStationList-NetworkStation.txt” with all the stations. 
+	xxx/tc_cross_correlation/Copy-Uniq-OpStationList-NetworkStation.txt  
 
 
-- You could change the realtime_xcorr_input.jsn for using Uniq-OpStationList-NetworkStation.txt instead of Copy-Uniq-OpStationList-NetworkStation.txt . 
+- You could change the realtime_xcorr_input.jsn for using Uniq-OpStationList-NetworkStation.txt (it contains all the stations) instead of Copy-Uniq-OpStationList-NetworkStation.txt (it contains only a few of stations for testing the workflow). This data has been obtained from the [IRIS](http://ds.iris.edu/ds/nodes/dmc/earthscope/usarray/_US-TA-operational/) website. 
 
 	{
     	"streamProducer" : [ { "input" : “/xxxxxxxxx/tc_cross_correlation/Uniq-OpStationList-NetworkStation.txt" } ]
