@@ -28,14 +28,14 @@ For running the preprocess (realtime_prep.py) and cross-correlation (realtime_xc
 
 - The last step is to open the file " tc_cross_correlation/realtime_xcorr_input.jsn” and change the path of the file Copy-Uniq-OpStationList-NetworkStation.txt
 
-	xxx/tc_cross_correlation/Copy-Uniq-OpStationList-NetworkStation.txt  
+		xxx/tc_cross_correlation/Copy-Uniq-OpStationList-NetworkStation.txt  
 
 
 - You could change the realtime_xcorr_input.jsn for using Uniq-OpStationList-NetworkStation.txt (it contains all the stations) instead of Copy-Uniq-OpStationList-NetworkStation.txt (it contains only a few of stations for testing the workflow). This data has been obtained from the [IRIS](http://ds.iris.edu/ds/nodes/dmc/earthscope/usarray/_US-TA-operational/) website. 
 
-	{
-    	"streamProducer" : [ { "input" : “/xxxxxxxxx/tc_cross_correlation/Uniq-OpStationList-NetworkStation.txt" } ]
-	}
+		{
+    		"streamProducer" : [ { "input" : “/xxxxxxxxx/tc_cross_correlation/Uniq-OpStationList-NetworkStation.txt" } ]
+		}
 
 
 - It is important that you delete DATA and XCORR directories every time before starting to run your workflows. 
