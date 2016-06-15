@@ -24,8 +24,7 @@ With dispel4py we have developed the *Seismic Ambient Noise Cross-Correlation* w
 as part of the [VERCE project](http://www.verce.eu) project, which preprocesses and cross-correlates traces from several stations in real-time. 
 The *xcorr workflow consists of two main phases:
 
-
-[[XcorrWorfklow.pdf]]
+![Figure xcorr workflow](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/XcorrWorkflow.pdf)
 
 - Phase 1 -- Preprocess: Each continuous time series from a given seismic station (called a *trace*), is subject to a series of treatments. 
 		The processing of each trace is independent from other traces, making this phase "embarrassingly" parallel (complexity O(n), where n is the number of stations
