@@ -30,8 +30,7 @@ The *xcorr workflow consists of two main phases:
 		The processing of each trace is independent from other traces, making this phase "embarrassingly" parallel (complexity O(n), where n is the number of stations
 - Phase 2 -- Cross-Correlation  Pairs all of the stations and calculates the cross-correlation for each pair (complexity O(n2)).
 
-
-All the codes for tesing this workflow can be found at [this](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/tc_cross_correlation) repository,
+**Important:** All the codes for tesing the *xcorr* workflow can be found at [this](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/tc_cross_correlation) repository,
 which includes the instructions for running it.
 
 
