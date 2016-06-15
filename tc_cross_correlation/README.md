@@ -4,7 +4,7 @@ You need to install obspy library
 
 	pip install obspy
 
-More information for installing obspy can be found [at](https://github.com/obspy/obspy/wiki/Installation-via-PyPi-from-source)
+More information for installing obspy can be found [here](https://github.com/obspy/obspy/wiki/Installation-via-PyPi-from-source).
 
 For running the preprocess (realtime_prep.py) and cross-correlation (realtime_xcorr.py or realtime_xcorr_storm.py) workflows, the next information is provided:
 
