@@ -12,7 +12,7 @@ Visit the [dispel4py GitHub repository](https://github.com/dispel4py/dispel4py),
 
 For learning about dispel4py, visit the [dispel4py training GitHub repository](), which contains several tutorial and simple workflows for starting with dispel4py
 
-## Seismology:  Seismic Noise Cross Correlation
+## Seismology:  Seismic Noise Cross Correlation Workflow
 	
 	
 Earthquakes and volcanic eruptions are sometimes preceded or accompanied by changes in the geophysical properties of the Earth, 
@@ -43,5 +43,75 @@ And we adopted Docker containers, because they can substantially improve computa
 More information about this work can be fout [at](https://www.iris.edu/hq/files/agendas/2016/iris_workshop/FerreiraDaSilvaRafael.pdf)
 and [pegasus_dispel4py GitHub repository](https://github.com/dispel4py/pegasus_dispel4py)	
 
-## 
+## Astrophysics: Internal Extinction of Galaxies Workflow
 
+A Virtual Observatory (VO) is a network of tools and
+services implementing the standards published by the International
+Virtual Observatory Alliance (IVOA) to provide
+transparent access to multiple archives of astronomical
+data. VO services are used in Astronomy for data sharing
+and serve as the main data access point for astronomical
+workflows in many cases. This is the case of the workflow
+presented here, which calculates the Internal Extinction of
+the Galaxies from the AMIGA catalogue. This property
+represents the dust extinction within the galaxies and is a
+correction coefficient needed to calculate the optical luminosity
+of a galaxy. 
+
+This workflow first reads an input file (coordinates.txt
+size 19KB) that contains the right ascension (Ra) and
+declination (Dec) values for 1051 galaxies. Then 
+queries a VO service for each galaxy in the input file using
+the Ra and Dec values. The results of these queries are
+filtered by selecting only the values
+that correspond to the morphological type (Mtype) and the
+apparent flattening (logr25) features of the galaxies. Finally,
+their internal extinction is calculated.
+
+
+## Social Computing: Twitter Sentiment Analysis Workflow
+
+With over 500 million tweets per day16 and 240 million active
+users who post opinions about people, events, products
+or services, Twitter has become an interesting resource for
+sentiment analysis . In this case study, we investigate
+the benefits of dispel4py for analysing Twitter data by
+implementing a basic Sentiment Analysis workflow, called
+*sentiment*.
+
+the *sentiment* workflow, first scans the tweets preprocessing the words they
+contain, and then classifies each tweet based on the total
+counts for positive and negative words. As the sentiment
+workflow applies two analyses, different preprocessing and
+classification tasks need to be performed. To classify each
+tweet with the AFINN lexicon,
+the sentimentAFINN PE tokenises each tweet “text” word,
+and then a very rudimentary sentiment score for the tweet
+is calculated by adding the score of each word. After
+determining the sentiments of all tweets, they are sent to the
+findState PE, which searches the US state from which the
+tweet originated, and discards tweets which are not sent from
+the US. The HappyState PE applies a grouping by based on
+the state and aggregates the sentiment scores of tweets from
+the same state, which are sent to the top3Happiest PE. This
+PE applies all-to-one grouping and determines which are the
+top three happiest states.
+
+The sentiment workflow also calculates tweet sentiment
+in parallel using the SWN3 lexicon. The tokenizationWD
+PE is a composite PE, where tweet tokenisation and tagging
+takes place: the tokenTweet PE splits the tweet text into tokens, the POSTagged PE
+produces a part-of-speech (POS) tag as an annotation based
+on the role of each word (e.g. noun, verb, adverb) and
+the wordnetDef PE determines the meaning of each word
+by selecting the synset that best represents the word in its
+context. After pre-processing each tweet, the second phase of
+the analysis is performed by the sentiment SWN3 composite
+PE: the SWN3 Interpretation PE
+searches the sentiment score associated with each synset in
+the SWN3 lexicon, the sentimentOrientation PE gets the
+positives, negatives and average scores of each term found
+in a tweet and the classifySWN3Tweet PE determines the
+sentiment of the tweet. After the classification, the same
+procedure as before is applied to each tweet, to know which
+are the three happiest states.
