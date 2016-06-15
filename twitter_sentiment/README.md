@@ -32,8 +32,7 @@
     2.Connect your Twitter application to these scripts
 	* Open get_live_tweets.py and enter your information here:
 		
-		access_token_key = xxxxxxxx
-		access_token_secret = xxxxxxx
-		api_key = xxxxxxx
-		api_secret = xxxxxx
-
+			access_token_key = xxxxxxxx
+			access_token_secret = xxxxxxx
+			api_key = xxxxxxx
+			api_secret = xxxxxx
