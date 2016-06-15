@@ -33,15 +33,18 @@ The *xcorr workflow consists of two main phases:
 Recently the [Pegasus team](https://pegasus.isi.edu/) and  the [dispel4py team](https://github.com/dispel4py/dispel4py) 
 have  collaborated  to  enable  automated the *xcorr* workflow, across different computing resources (MPI cluster and Storm cluster)
 collecting data from [IRIS](http://ds.iris.edu/ds/nodes/dmc/earthscope/usarray/_US-TA-operational/). For this work, we have
-submitted the preprocess part to a MPI cluster, and the cross-corelation to a Storm cluster. 
+submitted the *preprocess* phase to a MPI cluster, and the *cross-corelation* phase to a Storm cluster. 
  
 The streaming and the mapping to different enactment systems, such as MPI or Storm,  are managed by dispel4py, 
 while the data movement between different execution computing resources (MPI cluster and Storm cluster), 
 and the coordination of the workflow execution are automatically managed by Pegasus. 
-And we adopted Docker containers, because they can substantially improve computational research reproducibility.
+And we adopted in this case Docker containers for implementing the different parts of this work, 
+because they can substantially improve computational research reproducibility.
 
 More information about this work can be fout [at](https://www.iris.edu/hq/files/agendas/2016/iris_workshop/FerreiraDaSilvaRafael.pdf)
-and [pegasus_dispel4py GitHub repository](https://github.com/dispel4py/pegasus_dispel4py)	
+and [pegasus_dispel4py GitHub repository](https://github.com/dispel4py/pegasus_dispel4py).
+
+	
 
 ## Astrophysics: Internal Extinction of Galaxies Workflow
 
