@@ -1,5 +1,13 @@
 # dispel4py_workflows
-This repository is dedicated to store different workflows that we have done for different scientific communities ( e.g., Seismologists, Astrophysics, etc) .
+This repository is dedicated to store different "real" workflows that we have done for different scientific communities ( e.g., Seismologists, Astrophysics, etc) .
+Simpler dispel4py workflows can be found [here](https://github.com/rosafilgueira/dispel4py_training_material)
+
+The dispel4py workflows stored in this repository have been presented at several conferences:
+	* [EGU-2015 Slides](https://github.com/rosafilgueira/dispel4py_training_material/blob/master/EGU2015_OpenSource_dispel4py.pdf)
+	* [eScience2015 Slides](https://github.com/rosafilgueira/dispel4py_training_material/blob/master/eScience2015_dispel4py.pdf) 
+	* [AGU2015 Slides] (Slides: https://github.com/rosafilgueira/dispel4py_training_material/blob/master/AGU2015_IN34A_dispel4py.pdf). 
+
+More information about these workflows can be foud [here](https://www.computer.org/csdl/proceedings/e-science/2015/9325/00/9325a454-abs.html). 
 
 # dispel4py
 dispel4py is a free and open-source Python library for describing abstract stream-based workflows for distributed data-intensive applications. It enables users to focus on their scientific methods, avoiding distracting details and retaining flexibility over the computing infrastructure they use. It delivers mappings to diverse computing infrastructures, including cloud technologies, HPC architectures and specialised data-intensive machines, to move seamlessly into production with large-scale data loads. The dispel4py system maps workflows dynamically onto multiple enactment systems, such as MPI, STORM and Multiprocessing, without users having to modify their workflows.
