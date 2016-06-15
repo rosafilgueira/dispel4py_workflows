@@ -18,7 +18,7 @@ Visit the [dispel4py GitHub repository](https://github.com/dispel4py/dispel4py),
 
 # Training Material
 
-For learning about dispel4py, visit the [dispel4py training GitHub repository](), which contains several tutorial and simple workflows for starting with dispel4py
+For learning more about dispel4py, visit the [dispel4py training GitHub repository](), which contains several tutorial and simple workflows for starting with dispel4py
 
 ## Seismology:  Seismic Noise Cross Correlation Workflow
 	
