@@ -1,9 +1,10 @@
 #Social Computing: Twitter Sentiment Analysis codes 
 
-- For storing the tweets execute (at the end of this file, more information is attached for collecting tweets):
+- For collecting tweets you have to execute (at the end of this file, more information is attached for collecting tweets):
 	
-		python get_live_tweets.py (The results are stored in tweets.json file)
-		In this repository we also have attached some tweets for trying directly the workflow without needing to execute the get_live_tweets.py script.
+		python get_live_tweets.py (The tweets are stored in *tweets.json* file)
+	
+ **Important**: In this repository we also have attached [some tweets](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/twitter_sentiment/tweets.json) for trying directly the workflow without needing to execute the get_live_tweets.py script.
 	
 - For executing the analysis, you need to have several python packages installed:
 
@@ -13,9 +14,7 @@
 	  	
 		dispel4py simple twitter/analysis_sentiment.py  -d '{"read" : [ {"input" : "tweets.json"} ]}'
 
-
-
- - To collect data you need a Twitter account and a Twitter application you would need:
+ - To collect tweets you need a Twitter account and a Twitter application you would need:
 
    ( Note: Assuming you already have a Twitter account use the following instructions to create a Twitter application)
 	
