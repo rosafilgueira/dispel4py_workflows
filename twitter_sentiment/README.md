@@ -22,8 +22,6 @@
  
 - For collecting tweets you need a Twitter account and a Twitter application you would need:
 
-   ( Note: Assuming you already have a Twitter account use the following instructions to create a Twitter application)
-	
     1.Create a Twitter application
 	* Open a web browser and go to https://apps.twitter.com/app/new
     	* Sign in with your normal Twitter username and password if you are not already signed in.
