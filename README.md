@@ -98,11 +98,6 @@ implementing a basic Sentiment Analysis workflow, called
 
 ![Figure sentiment workflow](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/TweetsWorkflow.pdf)
 
-**Important!** All the codes for tesing the *sentiment* workflow can be found [here](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/twitter_sentiment)
-repository, which includes the instructions for running it.
-
-https://github.com/rosafilgueira/dispel4py_workflows/tree/master/twitter_sentiment
-
 The *sentiment* workflow, first scans the tweets preprocessing the words they
 contain, and then classifies each tweet based on the total
 counts for positive and negative words. As the sentiment
@@ -139,3 +134,6 @@ in a tweet and the classifySWN3Tweet PE determines the
 sentiment of the tweet. After the classification, the same
 procedure as before is applied to each tweet, to know which
 are the three happiest states.
+
+**Important!** All the codes for tesing the *sentiment* workflow can be found [here](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/twitter_sentiment)
+repository, which includes the instructions for running it.
