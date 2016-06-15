@@ -116,7 +116,7 @@ the same state, which are sent to the top3Happiest PE. This
 PE applies all-to-one grouping and determines which are the
 top three happiest states.
 
-The sentiment workflow also calculates tweet sentiment
+The *sentiment* workflow also calculates tweet sentiment
 in parallel using the SWN3 lexicon. The tokenizationWD
 PE is a composite PE, where tweet tokenisation and tagging
 takes place: the tokenTweet PE splits the tweet text into tokens, the POSTagged PE
