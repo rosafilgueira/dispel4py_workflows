@@ -428,7 +428,7 @@ def wordnet_pos_code(tag):
         return ''
 
 
-ROOT_DIR="twitter.2.0/"	
+ROOT_DIR="./"	
 tweets= ReadData() 
 tweets.name='read'
 sentiment_afinn= AFINNSentimeScore("AFINN-111.txt")            
