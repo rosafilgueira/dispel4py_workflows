@@ -30,19 +30,17 @@ The *xcorr workflow consists of two main phases:
 		The processing of each trace is independent from other traces, making this phase "embarrassingly" parallel (complexity O(n), where n is the number of stations
 - Phase 2 -- Cross-Correlation  Pairs all of the stations and calculates the cross-correlation for each pair (complexity O(n2)).
 
-**Important:** All the codes for tesing the *xcorr* workflow can be found at [this](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/tc_cross_correlation) repository,
-which includes the instructions for running it.
+**Important!** All the codes for tesing the *xcorr* workflow can be found at [this](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/tc_cross_correlation) repository, which includes the instructions for running it.
 
 
-Recently the [Pegasus team](https://pegasus.isi.edu/) and  the [dispel4py team](https://github.com/dispel4py/dispel4py) 
-have  collaborated  to  enable  automated the *xcorr* workflow, across different computing resources (MPI cluster and Storm cluster)
+**Note**: Recently the [Pegasus team](https://pegasus.isi.edu/) and the [dispel4py team](https://github.com/dispel4py/dispel4py) 
+have  collaborated  to  enable to run the *xcorr* workflow across different computing resources (MPI cluster and Storm cluster)
 collecting data from [IRIS](http://ds.iris.edu/ds/nodes/dmc/earthscope/usarray/_US-TA-operational/). For this work, we have
-submitted the *preprocess* phase to a MPI cluster, and the *cross-corelation* phase to a Storm cluster. 
- 
+submitted (and run) the *preprocess* phase to a MPI cluster, and the *cross-correlation* phase to a Storm cluster. 
 The streaming and the mapping to different enactment systems, such as MPI or Storm,  are managed by dispel4py, 
 while the data movement between different execution computing resources (MPI cluster and Storm cluster), 
 and the coordination of the workflow execution are automatically managed by Pegasus. 
-And we adopted in this case Docker containers for implementing the different parts of this work, 
+And we have adopted Docker containers for implementing this work, 
 because they can substantially improve computational research reproducibility.
 
 More information about this work can be fout [at](https://www.iris.edu/hq/files/agendas/2016/iris_workshop/FerreiraDaSilvaRafael.pdf)
@@ -76,6 +74,8 @@ filtered by selecting only the values
 that correspond to the morphological type (Mtype) and the
 apparent flattening (logr25) features of the galaxies. Finally,
 their internal extinction is calculated.
+
+**Important!** All the codes for tesing the *internal extinction* workflow can be found at [this](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/internal_extinction) repository, which includes the instructions for running it.
 
 
 ## Social Computing: Twitter Sentiment Analysis Workflow
