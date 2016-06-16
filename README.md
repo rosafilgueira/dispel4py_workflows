@@ -40,6 +40,8 @@ The *xcorr* workflow consists of two main phases:
 
 **Important!** All the codes for tesing the *xcorr* workflow can be found [here](https://github.com/rosafilgueira/dispel4py_workflows/tree/master/tc_cross_correlation) repository, which includes the instructions for running it.
 
+In this repostory I have stored the presentation [BatchVsRealTime](https://github.com/rosafilgueira/dispel4py_workflows/blob/master/BatchVsRealTime.pdf), that I gave in the Edinburgh GeoSciences group, 2015,
+for presenting the different options that we could use for implementing this use case in their computing resources (Terracorrelator machine).
 
 **Note**: Recently the [Pegasus team](https://pegasus.isi.edu/) and the [dispel4py team](https://github.com/dispel4py/dispel4py) 
 have  collaborated  to  enable to run the *xcorr* workflow across different computing resources (MPI cluster and Storm cluster)
