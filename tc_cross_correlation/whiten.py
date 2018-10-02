@@ -6,7 +6,7 @@ Created on Mon Apr 07 09:30:46 2014
 """
 
 from numpy import arange, sqrt, abs, multiply, conjugate, real
-from obspy.signal.util import nextpow2
+from obspy.signal.util import next_pow_2
 from scipy.fftpack import fft, ifft
 import copy
 
@@ -21,7 +21,7 @@ def spectralwhitening(stream):
         data = stream2[trace].data
         
         n = len(data)
-        nfft = nextpow2(n)
+        nfft = next_pow_2(n)
         
         spec = fft(data, nfft)
         spec_ampl = sqrt(abs(multiply(spec, conjugate(spec))))
