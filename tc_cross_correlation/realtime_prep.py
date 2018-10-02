@@ -3,9 +3,9 @@ from dispel4py.base import BasePE, IterativePE, ConsumerPE, create_iterative_cha
 from dispel4py.workflow_graph import WorkflowGraph
 
 from obspy.clients.fdsn import Client
+from obspy.signal.util import next_pow_2
 from tc_cross_correlation.whiten import spectralwhitening_smooth
 from tc_cross_correlation.normalization import onebit_norm, mean_norm, gain_norm, env_norm
-from obspy.signal.util import next_pow_2
 from scipy.fftpack import fft
 import numpy as np
 from obspy.core import read
@@ -177,8 +177,9 @@ class PreTaskPE(IterativePE):
 	  
 
 ROOT_DIR = './tc_cross_correlation/OUTPUT/'
-starttime='2015-04-06T06:00:00.000'
-endtime='2015-04-06T07:00:00.000'
+
+starttime='2018-10-02T06:00:00.000'
+endtime='2018-10-02T07:00:00.000'
 
 t_start = UTCDateTime(starttime)
 t_finish = UTCDateTime(endtime)
