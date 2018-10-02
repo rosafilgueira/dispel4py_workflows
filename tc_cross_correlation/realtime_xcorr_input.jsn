@@ -1,3 +1,3 @@
 {
-    "streamProducer" : [ { "input" : "/home/tutorial/dispel4py/tc_cross_correlation/Copy-Uniq-OpStationList-NetworkStation.txt" } ]
+    "streamProducer" : [ { "input" : "/lustre/home/z04/rosaf2/dispel4py_workflows/tc_cross_correlation/Copy-Uniq-OpStationList-NetworkStation.txt" } ]
 }
