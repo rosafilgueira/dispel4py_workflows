@@ -5,7 +5,7 @@ Created on Mon Apr 07 09:32:54 2014
 @author: abell5
 """
 
-from obspy.signal.util import nextpow2
+from obspy.signal.util import next_pow_2
 from scipy.fftpack import fft, ifft
 from numpy import complex, conjugate, roll, copy
 
@@ -25,7 +25,7 @@ def xcorrf(trace1, trace2, shift=None):
 
     # Always use 2**n-sized FFT, perform xcorr
     size = max(2 * shift + 1, (N1 + N2) // 2 + shift)
-    nfft = nextpow2(size)
+    nfft = next_pow_2(size)
     print size
     #Calculate fft of data1 and data2
 
