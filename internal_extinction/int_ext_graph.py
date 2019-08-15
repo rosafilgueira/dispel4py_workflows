@@ -1,6 +1,4 @@
-# Run as follows:
-#
-#  $ dispel4py multi int_ext_graph.py -d '{"read" : [ {"input" : "coordinates.txt"} ]}' -n 4 -s
+##  $ dispel4py multi int_ext_graph.py -d '{"read" : [ {"input" : "coordinates.txt"} ]}' -n 4 -s
 #
 # or
 #
@@ -39,8 +37,7 @@ from dispel4py.workflow_graph import WorkflowGraph
 
 import requests
 from astropy.io.votable import parse_single_table
-from cStringIO import StringIO
-
+import io
 import sys
 import math
 
@@ -49,7 +46,7 @@ type_dict={"E":-5, "E-S0":-3, "S0":-2, "S0a":0, "Sa":1, "Sab":2, "Sb":3, "Sbc":4
 C=0.04
 
 def internal_extinction(mtype, logr25):
-    if type_dict.has_key(mtype):
+    if mtype in type_dict:
         type=float(type_dict[mtype])
     else:
         type=-10.
@@ -104,9 +101,9 @@ class FilterColumns(IterativePE):
         IterativePE.__init__(self)
     def _process(self, data):
         count, ra, dec, votable_xml = data
-        table = parse_single_table(StringIO(votable_xml))
+        table = parse_single_table(io.BytesIO(votable_xml.encode('utf-8')), pedantic=False)
         results = [count, ra, dec]
-	
+        
         for c in self.columns:
             try:
                 value = table.array[c].data[0] # we assume that there's only one row in the table
@@ -123,6 +120,7 @@ class InternalExtinction(IterativePE):
         count, ra, dec = data[0:3]
         mtype = data[3]
         logr25 = data[4]
+        self.log("!! DATA mytype:%s, logr25:%s" %(mtype,logr25))
         try:
             t, ai = internal_extinction(mtype, logr25)
             result = [count, ra, dec, mtype, logr25, t, ai]
